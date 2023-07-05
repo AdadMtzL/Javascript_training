@@ -4,19 +4,29 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="Style.css">
-    <title>Document</title>
+    <title>Bases javascript</title>
 </head>
 <body>
+    <script src="./scripts/Statements.js"></script>
     <nav>
         <h1>Ejercicios basicós de javascript</h1>
     </nav>
+    <br>
+    <script>alert('Hola usuario, que hace')</script>
+    <br>
+    <p id="p1"></p>
+    <script>
+        document.getElementById("p1").innerHTML = "New text!";
+    </script>
+
+    <br>
     <div>
-        <h3>Lista de contenidos</h3>
-        <form action="" method="get">
-            <button onclick="" type="button" id="bnt1">Función 1</button>
-            <button onclick="" type="button" id="bnt2">Función 2</button>
-            <button onclick="" type="button" id="bnt3">Función 3</button>
-            <button onclick="" type="button" id="bnt4">Función 4</button>
+        <h3>Lista de contenidos</h3><br>
+        <form method="get">
+            <button onclick="Saludar();"  type="button" id="bnt1">Obtención de fecha y hora</button><br><br>
+            <button onclick="Operaciones()" type="button" id="bnt2">Operaciones aritmeticas</button><br><br>
+            <button onclick="Arreglos()" type="button" id="bnt3">Arreglos</button><br><br>
+            <button onclick="" type="button" id="bnt4">Función 4</button><br><br>
             <button onclick="" type="button" id="bnt5">Función 5</button>
         </form>
     </div>
