@@ -22,3 +22,13 @@ p
 {
     text-align: center;
 }
+div
+{
+    background-color: beige;
+    border-style: dashed;
+}
+ul
+{
+    text-align: center;
+    list-style: circle;
+}

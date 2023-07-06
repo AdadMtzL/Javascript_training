@@ -51,3 +51,7 @@ function Temp() {
 //Se pueden generar arreglos de objetos, mediante la sintaxis var v1[new class(params),new class(params),new class(params),...]
 //se accede a ellos mediante v1[index]
 //De manera similar s epueden crear objetos de arreglos, poniendo estos como una propiedad
+
+/*
+Metodos de ventana
+*/
