@@ -32,3 +32,29 @@ ul
     text-align: center;
     list-style: circle;
 }
+table 
+{
+    background-color: floralwhite;
+    border-style: double;
+    margin-left: 5%;
+}
+tr
+{
+    border-style: double;
+}
+td
+{
+    border-style: double;
+}
+td:hover
+{
+    background-color: black;
+    color: white;
+}
+button:hover
+{
+    border-radius: 50%;
+    size: 200%;
+    background-color: black;
+    color: white;
+}

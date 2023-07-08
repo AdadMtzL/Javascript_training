@@ -61,3 +61,13 @@ function Arreglos ()
         alert("función anonima e inmediatamente invocada ejecutada")
     }())
 }
+ /*
+ Un tipode variable o forma de asignar los valores a una variable es mediante la siguiente:
+ var nombre = (var1/value || var2/value || ... || varn/value)
+ Se llaman shortcircuit values, en si son ciando algo falla se asigna el valor soguiente
+ Se pueden declarar como objetos si se le coloca ka estructura adecuada 
+ Por ejemplo
+ var1 = false
+ var v2 = (var1 || {})
+ dentro de los corchtes declarar el objeto adecuadamente
+ */
