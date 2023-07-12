@@ -20,29 +20,234 @@
     </div>
     <div>
         <table>
+            <!--Separador-->
             <tr>
                 <td>
                     <h3>Selectores Basicos</h3>
-                <tr>
-                    <td>
-                        <ul>
-                            <li>*</li>
-                            <li>element</li>
-                            <li>#id</li>
-                            <li>.class</li>
-                            <li>selector1,selector2</li>
-                        </ul>
-                    </td>
-                    <td>
-                        <ul>
-                            <li>Todos los elementos</li>
-                            <li>Todos los elementos con el nombre</li>
-                            <li>Elementos con el id</li>
-                            <li>Elementos de la clase</li>
-                            <li>Multiples selectores</li>
-                        </ul>
-                    </td>
-                </tr>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>*</li>
+                                <li>element</li>
+                                <li>#id</li>
+                                <li>.class</li>
+                                <li>selector1,selector2</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Todos los elementos</li>
+                                <li>Todos los elementos con el nombre</li>
+                                <li>Elementos con el id</li>
+                                <li>Elementos de la clase</li>
+                                <li>Multiples selectores</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </td>
+                <!--Separador-->
+                <td>
+                    <h3>Jerarquia</h3>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>Element1 element2</li>
+                                <li>parent > child</li>
+                                <li>previous + next</li>
+                                <li>previous - siblings</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Ancestor descendant</li>
+                                <li>Elemento padre > Elemento hijo</li>
+                                <li>Selectores adyacentes</li>
+                                <li>Seleccionara elementos que son hermanos del elemento anterior</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </td>
+            </tr>
+            <!--Separador-->
+            <tr>
+                <td>
+                    <h3>Filtros</h3>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>:not(selector)</li>
+                                <li>:first</li>
+                                <li>:last</li>
+                                <li>:even</li>
+                                <li>:odd</li>
+                                <li>:eq(index)</li>
+                                <li>:gt(index)</li>
+                                <li>:lt(index)</li>
+                                <li>:header</li>
+                                <li>:animated</li>
+                                <li>:focus</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Los elementos de un tipo que no son uno en especifico div:not('#sumary')</li>
+                                <li>El primer elmento de la selección</li>
+                                <li>Ultimo elemento de la selección</li>
+                                <li>Elmentos con un indice par en la selección</li>
+                                <li>Elmentos con un indice impar en la selección</li>
+                                <li>Elmentos con un indice igual a un parametro</li>
+                                <li>Elmentos con un indice mayor a un parametro</li>
+                                <li>Elmentos con un indice menor a un parametro</li>
+                                <li>Todos los elementos de h1 a h7</li>
+                                <li>Elementos animados</li>
+                                <li>Elementos que esten actualmente enfocados</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </td>
+            </tr>
+            <!--Separador-->
+            <tr>
+                <td>
+                    <h3>Filtros de contenido</h3>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>:contains('text')</li>
+                                <li>:empty</li>
+                                <li>:parent</li>
+                                <li>:has(selector)</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Elementos que contienen el texto especificado</li>
+                                <li>Elementos que no tengan hijos</li>
+                                <li>Elementos que tienen un nodo hijo</li>
+                                <li>Elementos que contienen un elemento interno, div:has(p)</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </td>
+            </tr>
+            <!--Separador-->
+            <tr>
+                <td>
+                    <h3>Filtros de visibilidad</h3>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>:hidden</li>
+                                <li>:visible</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Todos los elementos que estan escondidos</li>
+                                <li>Todos los elementos que consumen el espacio de la pagina</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </td>
+            </tr>
+            <!--Separador-->
+            <tr>
+                <td>
+                    <h3>Filtros de hijos</h3>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>:nth-child(expr)</li>
+                                <li>:first-child</li>
+                                <li>:last-child</li>
+                                <li>:only-child</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>ul li:nth-child(2)</li>
+                                <li>Primer hijo de la selección actual</li>
+                                <li>Ultimo hijo de la selección actual</li>
+                                <li>Cuando hay solo un hijo de la selección actual div p:only-child</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </td>
+            </tr>
+            <!--Separador-->
+            <tr>
+                <td>
+                    <h3>Filtros de atributos</h3>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>[attribute]</li>
+                                <li>[attribute='value']</li>
+                                <li>[attribute!='value']</li>
+                                <li>[attribute^='value']</li>
+                                <li>[attribute*='value']</li>
+                                <li>[attribute|='value']</li>
+                                <li>[attribute~='value']</li>
+                                <li>[attribute][attribute]</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Elementos con cualquier atributo</li>
+                                <li>Elementos con el atributo especificado</li>
+                                <li>Elementos sin el atributo especificado</li>
+                                <li>El valor del atributo comienza con el valor</li>
+                                <li>El valor deeria de aperecer en algún lugar del atributo</li>
+                                <li>Comienza o es igual al valor</li>
+                                <li>Un atributo en una lista separada</li>
+                                <li>Elementos que concidan con los multiples selectores</li>
+                            </ul>
+                        </td>
+                    </tr>
+                </td>
+            </tr>
+            <!--Separador-->
+            <tr>
+                <td>
+                    <h3>Formulario form</h3>
+                    <tr>
+                        <td>
+                            <ul>
+                                <li>:input</li>
+                                <li>:text</li>
+                                <li>:password</li>
+                                <li>:radio</li>
+                                <li>:checkbox</li>
+                                <li>:submit</li>
+                                <li>:image</li>
+                                <li>:reset</li>
+                                <li>:button</li>
+                                <li>:file</li>
+                                <li>:selected</li>
+                                <li>:enabled</li>
+                                <li>:disabled</li>
+                                <li>:checked</li>
+                            </ul>
+                        </td>
+                        <td>
+                            <ul>
+                                <li>Todos los elemetos de entrada</li>
+                                <li>Todos los elemetos de texto</li>
+                                <li>Todos los elemetos de contraseña</li>
+                                <li>Todos los elemetos de radio</li>
+                                <li>Todos los elemetos de checkbox</li>
+                                <li>Todos los elemetos de envio</li>
+                                <li>Todos los elemetos de imagen</li>
+                                <li>Todos los elemetos de reseteo</li>
+                                <li>Todos los elemetos de boton</li>
+                                <li>Todos los elemetos de archivo</li>
+                                <li>Todos los elemetos seleccionados</li>
+                                <li>todos los elementos activos del formulario</li>
+                                <li>todos los elementos inactivos del formulario</li>
+                                <li>Todos los elementos activos en radiobuttons o checkbox</li>
+                            </ul>
+                        </td>
+                    </tr>
                 </td>
             </tr>
         </table>
