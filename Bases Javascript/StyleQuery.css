@@ -14,3 +14,11 @@ body
 {
     text-align: center;
 }
+table 
+{
+    border-style: dotted;
+}
+tr,td
+{
+    background-color: bisque;
+}
