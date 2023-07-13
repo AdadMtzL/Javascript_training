@@ -8,6 +8,71 @@
     <title>Ejercicios</title>
 </head>
 <body>
-    
+    <h1>Ejercicios de jquery</h1>
+    <div>
+        <p id="primero">
+            Mensaje de relleno
+        </p>
+    </div>
+    <ul>
+        <li>1</li>
+        <li>2</li>
+        <li>3</li>
+        <li>4</li>
+        <li>5</li>
+        <li>6</li>
+    </ul>
+    <p id="Segundo">Texto animado</p>
+    <textarea id="prueba" placeholder="Texto aleatorio"></textarea>
+    <br>
+    <button id="one" onclick="ObtenerTexto()">Obtener texto</button>
+    <br>
+    <button id="one" onclick="AgregarLista()">Expandir lista</button>
+    <br>
+    <button id="one" onclick="modiicarBotones()">Modificar botones</button>
+    <br>
+    <button id="one" onclick="">Expandir lista</button>
 </body>
+
+
+
+<!--Inicio de los scripts-->
+<script>
+    //Para cuando cargue la pagina completa
+    var num =6
+    $(document).ready(
+        function()
+        {
+            //Code goes here
+        }
+    )
+    //obtencion de los elementos de una etiqueta
+    var texto = $('ul').html()
+    var texto2 = $('ul').text()
+    alert("Elementos de la lista "+texto+"En texto es "+texto2)
+
+    
+    //Animación con id
+    $('p[id = "Segundo"]').hide().delay(2000).fadeIn(1400)
+
+    function ObtenerTexto() 
+    {
+        var contenidos = $('textarea').val()
+        $('ul').before('<h2>Texto Generado con javascript</h2>')
+        alert("El text area contiene \n"+contenidos)
+    }
+    function AgregarLista()
+    {
+        num ++
+        $('ul').append('<li id = "'+num+'" >'+num+'</li>')
+    }
+    function modiicarBotones()
+    {
+        var fondo = $('button').css('background-color')
+        alert('El fondo de los botones es de color '+fondo)
+        $('button[id = "one"]').css({
+            'background-color':'#FAF9F8'
+        })
+    }
+</script>
 </html>
