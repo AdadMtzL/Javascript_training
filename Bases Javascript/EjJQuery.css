@@ -3,7 +3,7 @@ body
     background-color: blanchedalmond;
     text-align: center;
 }
-div
+div,li
 {
     background-color: aquamarine;
 }
